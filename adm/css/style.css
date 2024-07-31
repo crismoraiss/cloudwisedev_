@@ -1,0 +1,314 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+ 
+ 
+p,
+a,
+button {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+ 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    background-color: #f2f2f2;
+}
+ 
+header{
+    background-color: #152039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+}
+ 
+.logo img{
+    height: 70px;
+    margin-left: 3rem;
+    margin-top: 1%;
+}
+ 
+.perfil{
+    display: flex;
+    margin-right: 5rem;
+    align-items: center;
+}
+ 
+.perfil img{
+    height: 45px;
+    margin-right: 1rem;
+    border-radius: 90px;
+}
+ 
+.perfil p a{
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+
+ 
+.menuFixo{
+    background-color: #152039;
+    /* width: 17%; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    padding: 14px;
+   
+}
+ 
+/*     position: fixed;
+    z-index: 2;
+    width: 250px;
+    min-width: 250px;
+    height: 100%; */
+ 
+.menuFixo ul{
+    display: flex;
+    align-items: flex-start;
+}
+ 
+/*.menuFixo li{
+    padding: 1rem 2rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}*/
+ 
+.menuFixo li{
+    text-align: center;
+}
+ 
+.menuFixo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+ 
+ 
+.conteudo{
+    /* display: flex; */
+    padding: 5%;
+    /* width: 75%; */
+}
+ 
+.estrutura{
+    display: flex;
+    position: fixed;
+}
+ 
+/*.conteudo{
+    width: 300vh;
+    height: 60em;
+    margin-top: 7em;
+    background-color: #041024;
+    border: solid 10px #814de9;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+}*/
+ 
+ 
+/* table, caption, th, tr{
+    border: solid #152039;
+} */
+ 
+table.table th{
+    vertical-align: middle;
+    background-color: #8292b9;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+table img{
+    width: 50%;
+}
+ 
+
+ 
+/* inserir sobre */
+ 
+.teste{
+    display: flex;
+}
+ 
+.teste img{
+    width: 15%;
+}
+ 
+ 
+ 
+form div div div{
+    margin-bottom: 1%;
+}
+ 
+ 
+form div div{
+    margin-bottom: 1%;
+}
+ 
+form textarea{
+    margin-bottom: 1%;
+}
+ 
+ 
+ 
+form img{
+    width: 25%;
+    cursor: pointer;
+}
+ 
+.listar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+ 
+.tituloListar {
+    width: 12%;
+    margin-bottom: 1%;
+    /* text-decoration: none; */
+    padding: 0px 20px 6px;
+    border-radius: 15px;
+    background: #00123d;
+   
+}
+ 
+.tituloListar a{
+    text-decoration: none;
+    color: #fff!important;
+}
+ 
+.tituloDesativado{
+    width: 28%;
+    margin-bottom: 1%;
+    /* text-decoration: none; */
+    padding: 0px 20px 6px;
+    border-radius: 15px;
+    background: #152039;
+    color: #fff;
+}
+ 
+.tituloDesativado a{
+    text-decoration: none;
+    color: #fff!important;
+}
+ 
+td a{
+    color: black;
+}
+ 
+ 
+/* .conteudo div div div{
+    background: #ff8990;
+}*/
+/*
+ 
+.formS input{
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+ 
+ 
+.texLin{
+    display: flex;
+    flex-direction: column;
+}
+ 
+.texLin textarea{
+    height: 175px;
+}
+ 
+ 
+.formS button{
+    background: #ff8900;
+    border-radius: 5px;
+    width: 23%;
+}
+ 
+.formS h1{
+    font-size: 23px;
+}
+ 
+.site{
+    border: solid #152039;
+    border-radius: 20px;
+    padding: 35px;
+    background: #2d50a194;
+}
+ 
+ 
+ 
+ 
+ 
+/* PARTE DO LOGIN */
+ 
+ 
+.custom-form {
+    background-color: #577ddd14;
+    padding: 30px;
+    border: 1px solid #00000045;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px black;
+    max-width: 400px;
+    width: 100%;
+  }
+ 
+  .custom-form-header {
+    text-align: center;
+  }
+ 
+  .custom-form-header h2 {
+    color: #ffffff;
+  }
+ 
+  .custom-form-label {
+    font-weight: bold;
+    color: white; /* Cor branca para os nomes (labels) */
+  }
+ 
+ 
+  .boody {
+    background-color: #152039;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* 0 até 600 será para Celular - Inicio */
+ 
+ 
+@media (max-width: 600px) {
+ 
+.menuFixo {
+    width: 28%;
+}
+ 
+.menuFixo a{
+    font-size: 13px;
+}
+ 
+}
+ 
+/* 0 até 600 será para Celular - Fim */

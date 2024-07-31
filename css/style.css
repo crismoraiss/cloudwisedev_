@@ -1,0 +1,1982 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+body {
+  background: linear-gradient(to bottom, #171717, #152039, #1b50d8);
+}
+a{
+  color: #000;
+}
+.site {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+h2,
+h3,
+h4,
+button {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+/* Menu */
+
+.topo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+
+
+.topo a img {
+  /* height: 70px; */
+  width: 105px; 
+}
+
+.topo nav ul {
+  display: flex;
+}
+
+.topo div nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-fixo {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 9999;
+  background: #171717a9;
+  animation: fadeIn 2s ease-in-out;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.726);
+}
+
+.menu ul li a {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-size: 23px;
+  transition: all 0.6s;
+  position: relative;
+}
+
+.menu ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: #BFFF00;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.menu ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.ativo {
+  font-weight: bold;
+  color: #f2f2f2 !important;
+}
+
+.menu ul li a i {
+  font-size: 21px;
+  margin-right: 10px;
+  color: #BFFF00;
+}
+
+
+
+
+
+.menu-2 button{
+  margin-bottom: 10px;
+  font-family: 'Anton', sans-serif;
+  color: #152039;
+  font-weight: bold;
+  background: #BFFF00;
+  border: 0;
+  font-size: 18px;
+  padding: 4px 26px;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+.menu-2 a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.6s;
+  padding: 0px 5px;
+}
+
+/*.menu-2 a:first-child {
+  margin-left: 20px;
+}*/
+
+.menu-2 ul li:nth-child(3) a {
+  margin-right: 0px;
+}
+
+.menu-2 a i {
+  font-size: 30px;
+  transition: all 0.6s;
+  color: #fff;
+}
+
+.menu-2 a i:hover {
+  color: #BFFF00;
+}
+
+/* Banner */
+
+/* Cursor */
+.typed-cursor {
+  color: #BFFF00;
+}
+
+/* .banner img {
+  width: 100%;
+}
+
+.banner .slick-next {
+  right: 25px;
+}
+
+.banner .slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+  font-size: 25px;
+  color: #BFFF00;
+}
+
+.banner .slick-dots li button:before {
+  font-size: 16px;
+  color: #1b50d8;
+}
+
+.banner .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #BFFF00;
+}
+
+.banner .slick-dots {
+  bottom: 30px;
+}
+
+.banner .slick-dots li {
+  margin: 0 15px;
+} */
+
+.banner {
+  background: url(../img/estrelas.svg) repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  height: 78vh;
+}
+
+.banner h1 {
+  font-size: 150px;
+  color: #f2f2f2;
+  font-family: "Lilita One", cursive;
+  animation: lightSpeedInLeft;
+  animation-duration: 2s;
+}
+
+.banner h2 {
+  font-size: 150px;
+  color: #BFFF00;
+  font-family: "Lilita One", cursive;
+  animation: lightSpeedInRight;
+  animation-duration: 2s;
+}
+
+.banner h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.banner-seta div {
+  display: flex;
+  justify-content: center;
+}
+
+.fa.icone {
+  font-size: 46px;
+  color: #BFFF00;
+  opacity: 1;
+  animation: anima 1050ms ease-in infinite alternate;
+}
+@keyframes anima {
+  to {
+    opacity: 0;
+    transform: scale(0.85) translateY(20px);
+  }
+}
+
+/* Sobre */
+
+.cnt-sobre {
+  padding: 100px 0;
+}
+
+.sobreimg {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sobreimg img {
+  width: 47%;
+  padding: 5px;
+}
+
+.sobre {
+  display: flex;
+  justify-content: space-around;
+}
+
+.txtsobre {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.txtsobre h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.txtsobre h2 i {
+  color: #BFFF00;
+  margin-right: 10px;
+}
+
+.txtsobre p {
+  font-size: 17px;
+  line-height: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding: 10px 0px;
+}
+
+.txtsobre a {
+  align-self: flex-end;
+  text-align: center;
+  width: 45%;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 8px 0px;
+  background: #BFFF00;
+  border-radius: 10px 15px;
+  transition: all 1s;
+}
+
+.txtsobre a:hover {
+  background: #000 ;
+  color: #f2f2f2;
+}
+
+.txtsobre a i {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* Como trabalhamos */
+
+.cnt-trabalhamos {
+  padding: 100px 0;
+}
+
+.trabalhamos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.trabalhamos img {
+  width: 40%;
+}
+
+.comot{
+  width: 51%;
+}
+
+.comot  h2 i {
+  color: #BFFF00;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.comot h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.txttrabalho {
+  width: 71%;
+}
+
+/* .txttrabalho h2 { */
+  /* font-family: "Varela Round", sans-serif; */
+  /* font-size: 30px; */
+  /* font-weight: bold; */
+  /* margin-bottom: 20px; */
+/* } */
+
+/* .txttrabalho h2 i { */
+  /* color: #BFFF00; */
+  /* margin-right: 20px; */
+  /* font-size: 30px; */
+/* } */
+
+.txttrabalho h3 {
+  font-size: 25px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.txttrabalho h3 i {
+  color: #BFFF00;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.txttrabalho p {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+/* Serviços */
+
+.cnt-servicos {
+  padding: 100px 0;
+}
+
+.cnt-servicos h2 {
+  font-family: "Varela Round", sans-serif;
+  margin-left: 60px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.cnt-servicos h2 i {
+  color: #BFFF00;
+  margin-right: 10px;
+  font-size: 23px;
+}
+
+.servicos div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servicos div div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 10px;
+  background: linear-gradient(328deg, #1b50d8, transparent);
+  /* border-radius: 25px 15px; */
+  border: solid thin #171717;
+  box-shadow: 8px 5px 8px #171717;
+}
+
+.servicos div:nth-child(1) {
+  border-radius: 50px 0px 0px 0px;
+}
+.servicos div:nth-child(2) {
+  border-radius: 0px 50px 0px 0px;
+}
+
+.servicos div:nth-child(3) {
+  border-radius: 0px 0px 0px 50px;
+}
+.servicos div:nth-child(4) {
+  border-radius: 0px 0px 50px 0px;
+}
+
+.servicos div div h3 {
+  font-size: 25px;
+  margin: 17px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.servicos div div p {
+  line-height: 25px;
+  flex-grow: 1;
+  /* padding: 15px 20px; */
+  padding: 32px 20px;
+  font-size: 17px;
+}
+
+.servicos div div a {
+  text-decoration: none;
+  align-self: flex-end;
+  margin: 20px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: #BFFF00;
+  transition: all 0.8s;
+}
+
+.servicos div div a:hover {
+  font-size: 21px;
+  color: #fff;
+}
+
+.servicos div div h3 i {
+  color: #BFFF00;
+  margin-right: 10px;
+}
+
+.servicos div div a i {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* Blog */
+
+
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.blog h2 {
+  font-size: 30px;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  align-self: flex-start;
+}
+
+.blog h2 i {
+  color: #BFFF00;
+  margin-right: 20px;
+}
+
+.blog div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog div div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 20px;
+}
+
+.blog div div img {
+  width: 100%;
+}
+
+.blog div div h3 {
+  text-align: center;
+  width: 40%;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #BFFF00;
+  background: #fff;
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.blog div div h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  width: 90%;
+}
+
+.blog div div p {
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 20px 0;
+  flex-grow: 1;
+}
+
+.blog div div a {
+  text-decoration: none;
+  margin-top: 20px;
+  align-self: flex-end;
+  margin: 20px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: #BFFF00;
+  transition: all 0.8s;
+}
+
+.blog div div a:hover {
+  background: #000 ;
+  color: #f2f2f2;
+}
+
+.blog div div a i {
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* páginas blog */
+
+.cnt-blog1 {
+  padding: 50px 0;
+}
+
+.blog1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+  font-weight: 500;
+  color: #BFFF00;
+  line-height: 45px;
+}
+
+.blog1 h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  margin-bottom: 5%;
+}
+
+.blog1 img {
+  width: 100%;
+  border-radius: 15px 25px;
+}
+.blog1 h4 {
+  font-size: 2rem;
+  margin: 3% 0;
+  font-weight: 500;
+  color: #BFFF00;
+}
+
+.blog1 p {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 5%;
+  font-weight: 300;
+}
+.blog1 ul {
+  padding: 20px;
+}
+
+.blog1 li {
+  list-style-type: disc;
+  color: #fff;
+  line-height: 28px;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.blog1 li span {
+  color: #BFFF00;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.blog1 div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.blog1 div div {
+  color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.blog1 div div span {
+  margin: 0 10px;
+}
+.blog1 .img-centro {
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+/* orçamento */
+
+.cnt-orcamento {
+  padding: 100px 0;
+}
+
+.orcamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orcamento div:nth-child(1) {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #f2f2f2 ;
+  border-radius: 20px 50px 0px 0px;
+}
+
+.orcamento h2 {
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.orcamento h2 span {
+  color: #000;
+}
+
+.orcamento div:nth-child(1) a {
+  margin-top: 20px;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+  width: 30%;
+  border-radius: 10px 20px;
+  padding: 10px 20px;
+  background: #BFFF00;
+  transition: all 1s;
+}
+
+.orcamento div:nth-child(1) a i {
+  margin-left: 5px;
+}
+
+.orcamento div:nth-child(1) a:hover {
+    background: #000 ;
+    color: #f2f2f2;
+}
+
+/* Oculta a seta original do elemento */
+details > summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+.sanfona {
+  width: 75%;
+  padding: 8px;
+  background: #fff;
+  margin-top: 7px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.sanfona details {
+  margin-top: 10px;
+}
+
+.sanfona summary {
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*
+.sanfona details p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #11275f;
+  text-decoration: none;
+  transition: all 0.8s;
+  padding: 10px 0;
+  margin-left: 30px;
+}
+
+
+
+/* Coloca a uma nova seta na esquerda por causa do pseudo-elemento ::before */
+
+summary::before {
+  content: ">";
+  color: #000;
+  background: #BFFF00;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+/* modifica a seta quando clicar */
+details[open] summary:before {
+  content: ">";
+  transform: rotate(45deg);
+}
+
+.sanfona summary i {
+  color: #BFFF00;
+  margin-right: 10px;
+}
+
+.sanfona summary {
+  margin-bottom: 10px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  color: #152039;
+  line-height: 25px;
+  padding: 10px;
+}
+
+.accordion::before {
+  content: ">"; /* Unicode character for "plus" sign (+) */
+  font-size: 18px;
+  color: #000;
+  display: inline-block;
+  width: 27px;
+  text-align: center;
+  margin-right: 5px;
+  background-color: #BFFF00;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.active::before {
+  content: ">"; /* Unicode character for "minus" sign (-) */
+  transform: rotate(45deg);
+}
+
+/* Rodapé */
+
+.footer {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cnt-rodape {
+  padding: 100px 0px 50px 0px;
+}
+
+.cnt-rodape div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cnt-rodape div div {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cnt-rodape div div h2 {
+  font-size: 25px;
+}
+
+.cnt-rodape div div hr {
+  width: 105%;
+  height: 3px;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+}
+
+.cnt-rodape div:nth-child(1) ul {
+  display: flex;
+}
+
+.cnt-rodape div:nth-child(1) ul li {
+  padding: 5px;
+}
+
+.cnt-rodape div:nth-child(1) ul li a {
+  font-size: 35px;
+}
+
+.cnt-rodape div:nth-child(2) ul {
+  flex-direction: column;
+}
+
+.cnt-rodape div:nth-child(2) h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.cnt-rodape div:nth-child(2) ul li {
+  padding: 5px;
+}
+
+.cnt-rodape div:nth-child(2) ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.8s;
+}
+
+.cnt-rodape div:nth-child(2) ul li a:hover {
+  color: #BFFF00;
+}
+
+.cnt-rodape div:nth-child(3) h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.cnt-rodape div:nth-child(3) a {
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.8s;
+}
+
+.cnt-rodape div:nth-child(3) a:hover {
+  color: #BFFF00;
+}
+
+.cnt-rodape div:nth-child(4) h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.cnt-rodape div:nth-child(4) a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.8s;
+}
+
+.cnt-rodape div:nth-child(4) a:hover {
+  color: #BFFF00;
+}
+
+/* Direitos */
+
+.cnt-direitos {
+  padding: 20px 0;
+}
+
+.cnt-direitos div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.cnt-direitos div:nth-child(1) p {
+  font-size: 15px;
+}
+
+.cnt-direitos div:nth-child(2) a {
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.8s;
+}
+
+.cnt-direitos div:nth-child(2) a:hover {
+  color: #BFFF00;
+}
+
+.cnt-direitos div:nth-child(3) {
+  width: 3%;
+}
+
+.cnt-direitos div:nth-child(3) img {
+  width: 100%;
+}
+
+/* botão */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 10;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: #152039;
+  display: none;
+  padding: 8px;
+  animation: slideOutUp;
+  animation-duration: 2.5s;
+}
+
+#back-to-top:hover {
+  background: #BFFF00;
+  transition: ease-in-out 1.5s;
+}
+
+#back-to-top img {
+  width: 60%;
+}
+
+/* Formulário de Contato */
+
+.form {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.form h2 {
+  font-family: "Exo", sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.form form div h3 {
+  padding: 20px;
+}
+
+.form form {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5%;
+  border: solid 1px #00000045;
+  box-shadow: black 3px 3px 7px;
+  border-radius: 10px 15px;
+  margin: 20px;
+}
+
+.form form div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form input,
+form textarea {
+  width: 98%;
+  height: 7%;
+  padding: 2% 0;
+  margin-bottom: 5%;
+  background: linear-gradient(45deg, black, transparent);
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  text-indent: 10px;
+  border-radius: 10px 5px;
+}
+
+form textarea {
+  resize: none;
+  height: 175px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #f2f2f2e1;
+  font-size: 1em;
+  text-indent: 10px;
+}
+
+.form form div:nth-child(2) div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.form form input[type="submit"],
+.form form button {
+  width: 45%;
+  color: #f2f2f2e1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: linear-gradient(181deg, black, transparent);
+  text-transform: uppercase;
+  border-radius: 5px 10px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.form form input[type="submit"]:hover,
+.form form button:hover {
+  background: linear-gradient(-189deg, #000b25, transparent);
+  color: #f2f2f2;
+  transition: ease-in-out 1.5s;
+}
+
+/* Missão Visão e Valores */
+
+.como {
+  padding: 100px 0;
+}
+
+.comotrab {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.comotrab .imgcomo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.comotrab .imgcomo div {
+  width: 100%;
+}
+
+.comotrab .txtcomo {
+  width: 45%;
+}
+
+.comotrab .txtcomo #missao {
+  width: 100%;
+}
+.comotrab .txtcomo #visao {
+  width: 100%;
+  display: none;
+}
+.comotrab .txtcomo #valores {
+  width: 100%;
+  display: none;
+}
+
+.comotrab div div img {
+  width: 100%;
+}
+
+.comotrab ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comotrab ul li {
+  padding: 20px 5px;
+}
+
+.comotrab ul li h3 {
+  font-weight: 600;
+}
+
+.comotrab ul li h3 i {
+  color: #BFFF00;
+}
+
+.comotrab ul p {
+  padding: 10px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.comotrab ul input {
+  display: none;
+}
+
+.comotrab ul label {
+  color: #f2f2f2;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.comotrab ul label:hover {
+  color: #BFFF00;
+}
+
+/* Estilo para os botões de rádio personalizados */
+
+input[type="radio"] + label {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px #1b50d8;
+  color: #f2f2f2;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #1b50d8;
+  color: #fff;
+}
+
+/* Nossa equipe */
+
+.cnt-equipe {
+  padding: 100px 0;
+}
+
+.equipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.equipe h2 {
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+.equipe p {
+  margin-bottom: 5%;
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+.equipe div {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.equipe div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  background: linear-gradient(57deg, #1b50d8, transparent);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 7px 10px 10px #171717;
+}
+
+.equipe div div img {
+  width: 70%;
+  margin-bottom: 5%;
+}
+
+.equipe div div h3 {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.equipe div div h4 {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.equipe div div p {
+  line-height: 25px;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 300;
+  flex-grow: 1;
+}
+
+.equipe div div ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.equipe div div ul li {
+  width: 30%;
+}
+
+.equipe div div ul li a {
+  text-decoration: none;
+}
+
+.equipe div div ul li a img {
+  width: 100%;
+}
+
+
+
+
+/* PARTE DO LOGIN */
+
+/*  
+.custom-form {
+  background-color: #577ddd14;
+  padding: 30px;
+  border: 1px solid #00000045;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px black;
+  max-width: 400px;
+  width: 100%;
+}
+
+.custom-form-header {
+  text-align: center;
+}
+
+.custom-form-header h2 {
+  color: #ffffff;
+}
+
+.custom-form-label {
+  font-weight: bold;
+  color: white; /* Cor branca para os nomes (labels) */
+/* } */
+
+/*  
+.boody {
+  background-color: #152039;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Daq pra cima é 1200px - PC */
+
+/* 601 até 900 será para Notebook - Inicio */
+
+@media (max-width: 900px) {
+  /* Menu */
+  .topo {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+  .topo a {
+    margin: 2% 0;
+  }
+  .topo div nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu ul li a {
+    padding: 0px 9px;
+    font-size: 16px;
+  }
+
+  .menu-2 ul li a i {
+    font-size: 26px;
+  }
+
+  /* banner */
+  .banner {
+    height: 85vh;
+  }
+
+  /* Sobre */
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txtsobre {
+    width: 85%;
+    margin-bottom: 7%;
+  }
+
+  .txtsobre a {
+    width: 40%;
+  }
+
+  .sobreimg {
+    width: 55%;
+  }
+
+  .sobreimg img {
+    width: 45%;
+    padding: 3px;
+  }
+
+  /* Como Trabalhamos */
+
+  .trabalhamos {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .trabalhamos img {
+    width: 50%;
+  }
+
+  .txttrabalho {
+    width: 80%;
+    margin-bottom: 7%;
+  }
+
+  .txttrabalho h2 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .txttrabalho h2 i {
+    color: #BFFF00;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+
+  .txttrabalho h3 {
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: 500;
+  }
+
+  .txttrabalho h3 i {
+    color: #BFFF00;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .txttrabalho p {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+
+  /* Serviços */
+
+  .servicos div div {
+    width: 40%;
+  }
+
+  /* Blog */
+
+  .blog {
+    width: 90%;
+  }
+
+  .blog div div {
+    align-items: flex-start;
+    width: 55%;
+  }
+
+  .blog div div h3 {
+    width: 65%;
+  }
+
+  /* pagina blog */
+
+  .blog1 .img-centro {
+    width: 75%;
+  }
+
+  /* Rodapé */
+
+  .footer {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cnt-rodape div div hr {
+    width: 80%;
+    height: 3px;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+  }
+
+  .cnt-rodape div {
+    flex-direction: column;
+  }
+
+  .cnt-rodape div div {
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+  }
+
+  .cnt-rodape div:nth-child(2) ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cnt-rodape div:nth-child(3) a {
+    text-align: center;
+    line-height: 25px;
+  }
+
+  /* Direitos */
+
+  /* .cnt-direitos div:nth-child(1) p {
+    font-size: 13px;
+  } */
+
+  /* .cnt-direitos div:nth-child(2) a {
+    font-size: 10px;
+  }
+
+  .cnt-direitos div:nth-child(3) {
+    width: 10%;
+  }*/
+
+  /* botão voltar ao topo */
+  #back-to-top {
+    right: 5px;
+    bottom: 15px;
+  }
+
+  /* formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form form div {
+    width: 100%;
+  }
+
+  /* missão visão e valores */
+
+  .comotrab {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .comotrab .txtcomo {
+    width: 90%;
+  }
+
+  .comotrab .imgcomo {
+    width: 45%;
+  }
+
+  /* Nossa Equipe */
+
+  .equipe p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .equipe div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .equipe div div {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  .equipe div div ul li {
+    width: 20%;
+  }
+}
+
+/* 601 até 900 será para Notebook - FIM*/
+
+@media not all and (max-width: 600px) {
+  .abrir-menu,
+  .fechar-menu {
+    display: none;
+  }
+}
+
+/* 0 até 600 será para Celular - Inicio */
+
+@media (max-width: 600px) {
+  /* Menu */
+
+  .topo {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .topo div nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul li {
+    margin: 7% 0;
+  }
+
+  .menu ul li a {
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  .menu ul li a i {
+    margin-right: 5px;
+  }
+
+  .menu a {
+    color: #f2f2f2;
+    letter-spacing: 3px;
+  }
+
+  .menu {
+    background: #152039da;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    max-width: 350px;
+    width: 50%;
+    z-index: 9;
+    right: -350px;
+    transition: right 0.8s ease-out;
+  }
+
+  .menu-ativo .menu {
+    right: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .abrir-menu {
+    background: url(../img/btn-menu.png);
+    background-size: cover;
+    padding: 20px;
+    border: 0;
+    display: block;
+  }
+
+  .fechar-menu {
+    background: url(../img/btn-fechar.png);
+    background-size: cover;
+    padding: 20px;
+    border: 0;
+    display: block;
+    margin: 5%;
+  }
+
+  .menu-2 {
+    margin: 10% auto;
+  }
+
+  .menu-2 a {
+    padding: 0px 5px;
+    display: table-cell;
+  }
+
+  .menu-2 ul {
+    flex-direction: row;
+  }
+
+  /* Banner */
+
+  .banner {
+    display: none;
+  }
+
+  .banner-seta {
+    display: none;
+  }
+
+  /* Sobre */
+
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txtsobre {
+    width: 85%;
+    margin-bottom: 7%;
+  }
+
+  .txtsobre h2 {
+    font-size: 22px;
+  }
+
+  .txtsobre h2 span {
+    font-size: 24px !important;
+  }
+
+  .txtsobre a {
+    padding: 8px 5px;
+    font-size: 15px;
+  }
+
+  .sobreimg {
+    width: 70%;
+  }
+
+  .sobreimg img {
+    width: 45%;
+    padding: 3px;
+  }
+
+  /* Como Trabalhamos */
+
+  .trabalhamos {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .trabalhamos img {
+    width: 60%;
+  }
+
+  .txttrabalho {
+    width: 65%;
+    margin-bottom: 7%;
+  }
+
+  .txttrabalho h2 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .txttrabalho h2 i {
+    color: #BFFF00;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+
+  .txttrabalho h3 {
+    font-size: 19px;
+    margin: 20px 0;
+    font-weight: 500;
+  }
+
+  .txttrabalho h3 i {
+    color: #BFFF00;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  .txttrabalho p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+
+  /* Serviços */
+
+  .cnt-servicos h2 {
+    margin-left: 40px;
+    font-size: 22px;
+  }
+
+  .cnt-servicos h2 i {
+    font-size: 20px;
+  }
+
+  .servicos div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicos div div {
+    width: 80%;
+  }
+
+  .servicos div:nth-child(1) {
+    border-radius: 10px 20px 20px 10px;
+  }
+
+  .servicos div:nth-child(2) {
+    border-radius: 10px 20px 20px 10px;
+  }
+
+  .servicos div:nth-child(3) {
+    border-radius: 10px 20px 20px 10px;
+  }
+
+  .servicos div:nth-child(4) {
+    border-radius: 10px 20px 20px 10px;
+  }
+
+  .servicos div div h3 {
+    align-self: flex-start;
+    font-size: 19px;
+  }
+
+  /* Blog */
+
+  .blog h2 {
+    margin-left: 40px;
+    font-size: 22px;
+  }
+
+  .blog div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog div div h3 {
+    width: 50%;
+  }
+
+  .blog div div {
+    align-items: flex-start;
+    width: 85%;
+  }
+
+  .blog div div h4 {
+    width: 85%;
+  }
+
+  /* página blog */
+  .blog1 div div {
+    font-size: 12px;
+  }
+
+  .blog1 h2 {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+
+  .blog1 h3 {
+    font-size: 17px;
+  }
+
+  .blog1 h4 {
+    font-size: 1.3em;
+  }
+
+  .blog1 p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .blog1 li span {
+    font-size: 16px;
+  }
+
+  .blog1 li {
+    font-size: 16px;
+  }
+
+  .blog1 .img-centro {
+    width: 100%;
+  }
+
+  /* Orçamento */
+
+  .orcamento div:nth-child(1) {
+    width: 75%;
+  }
+
+  .orcamento h2 {
+    font-size: 18px;
+  }
+
+  .orcamento h2 span {
+    color: #BFFF00;
+  }
+
+  .orcamento div:nth-child(1) a {
+    width: 53%;
+    font-size: 15px;
+  }
+
+  .sanfona summary {
+    font-size: 18px;
+  }
+
+  .sanfona details p {
+    font-size: 16px;
+  }
+
+  /* Rodapé */
+
+  .footer {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cnt-rodape {
+    padding: 50px 0;
+  }
+
+  .cnt-rodape div div h2 {
+    font-size: 20px;
+  }
+
+  .cnt-rodape div div hr {
+    width: 80%;
+    height: 3px;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+  }
+
+  .cnt-rodape div {
+    flex-direction: column;
+  }
+
+  .cnt-rodape div div {
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+
+  .cnt-rodape div:nth-child(2) ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cnt-rodape div:nth-child(3) a {
+    text-align: center;
+    line-height: 25px;
+  }
+
+  /* Direitos */
+
+  .cnt-direitos {
+    padding: 10px;
+  }
+
+  /*.cnt-direitos div:nth-child(2) a {
+    font-size: 10px;
+  }
+
+  .cnt-direitos div:nth-child(3) {
+    width: 10%;
+  }*/
+
+  /* botão voltar ao topo */
+  #back-to-top {
+    bottom: 25px;
+  }
+  /* Formulário */
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form form div {
+    width: 100%;
+  }
+
+  .form h2 {
+    font-size: 1.5rem;
+  }
+
+  .form input,
+  form textarea {
+    font-size: 10px;
+  }
+
+  .form form input[type="submit"],
+  .form form button {
+    font-size: 12px;
+  }
+
+  form textarea {
+    height: 90px;
+  }
+
+  /* Missão visão e valores */
+
+  .comotrab {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .comotrab .txtcomo {
+    width: 85%;
+  }
+
+  .comotrab .imgcomo {
+    width: 45%;
+  }
+
+  /* Nossa Equipe */
+
+  .equipe p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .equipe h2 {
+    font-size: 1.5rem;
+  }
+
+  .equipe div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .equipe div div {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  .equipe div div img {
+    width: 50%;
+  }
+}
+
+/* 0 até 600 será para Celular - FIM */
